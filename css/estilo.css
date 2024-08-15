@@ -1,0 +1,268 @@
+/* empieza body */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-image: url(/img/fondo.png);
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
+}
+/* termina body */
+
+
+/* empieza header */
+
+.img-nutrend{
+    width: 22rem;
+    margin-top: -6.3rem;
+    margin-left: -2rem;
+}
+
+.menu-container {
+    position: relative;
+    background-color: #0080FF;
+    height: 3.7rem;
+}
+
+.menu-options{
+    display: flex;
+    justify-content: end;
+    padding: 0rem;
+    margin: 0rem;
+    margin-right: 3rem;
+    margin-top: -10.5rem;
+    list-style-type: none;
+}
+
+.li-header{
+    margin-right: 2rem;
+    margin-top: 1.3rem;
+    font-size: 1.1rem;
+}
+
+.link-header {
+    color: white;
+    text-decoration: none;
+}
+
+.link-header:hover{
+    color: #27272a;
+}
+/* empieza main */
+
+.img-inicio{
+    height: 26rem;
+    width: 100%;
+    margin-left: -3.8rem;
+
+}
+
+.div-titulo{
+    width: 100%;
+    height: 3rem;
+    background-color: #18181b;
+    opacity: 90%;
+    margin-top: -.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0080FF;
+    font-size: 3rem;
+}
+
+.div-inicio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.8rem;
+}
+
+
+/* termina main */
+
+/* empieza cartas */
+.div-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.8rem ;
+}
+
+.cards {
+    --bg-card: #27272a;
+    --primary: #6d28d9;
+    --primary-800: #4c1d95;
+    --primary-shadow: #2e1065;
+    --light: #d9d9d9;
+    --zinc-800: #18181b;
+    --bg-linear: linear-gradient(0deg, var(--primary) 50%, var(--light) 125%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    width: 14rem;
+    background-color: var(--bg-card);
+    border-radius: 1rem;
+    margin-top: 2rem;
+    
+}
+
+
+.image_container {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    height: 8rem;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.image_container .image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 11rem;
+    height: 9rem;
+    fill: var(--light);
+}
+
+.img-chica{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 11rem;
+    height: 9.5rem;
+    fill: var(--light);
+}
+
+
+.title {
+    overflow: clip;
+    width: 100%;
+    font-size: .94rem;
+    font-weight: 600;
+    color: var(--light);
+    text-transform: capitalize;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+}
+
+.size {
+    font-size: 0.75rem;
+    color: var(--light);
+}
+
+.list-size {
+    display: flex;
+    gap: 0.25rem;
+    margin-top: 0.25rem;
+    align-items: center;
+    margin-left: -.34rem;
+}
+
+.list-prote-on{
+    margin-left: -2.8rem;
+}
+
+.list-prote-prem{
+    margin-left: 2rem;
+}
+
+.list-size .item-list {
+    list-style: none;
+}
+
+.list-size .item-list-button {
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: var(--zinc-800);
+    font-size: 0.75rem;
+    color: var(--light);
+    border: 2px solid var(--zinc-800);
+    border-radius: 0.25rem;
+    transition: all 0.3s ease-in-out;
+    width: 4.7rem;
+    height: 3.7rem;
+}
+
+.item-list-button:hover {
+    border: 2px solid var(--light);
+}
+.item-list-button:focus {
+    background-color: #2E9AFE;
+    border: 2px solid #0080FF;
+    box-shadow: inset 0px 1px 4px var(--primary-shadow);
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--light);
+}
+
+.cart-button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    padding: .5rem;
+    width: 8rem;
+    background-color: #2E9AFE;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--light);
+    text-wrap: nowrap;
+    border: 2px solid #0080FF;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0 0.25rem 1px var(--light);
+}
+
+.cart-button .cart-icon {
+    width: 1rem;
+}
+
+.link-button{
+    text-decoration: none;
+}
+
+/* termina cartas */
+
+
+
+
+/* empieza footer */ 
+
+.logo-wpp{
+    height: 3.5rem;
+    right: 10px;
+    bottom: 10px;
+    position: fixed;
+    z-index: 1000;
+}
+
+/* termina footer */ 
